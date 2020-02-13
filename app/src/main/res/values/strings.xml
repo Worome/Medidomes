@@ -3,7 +3,7 @@
     <string name="etmedicamento">Medicamento</string>
     <string name="etUso">Uso</string>
     <string name="et_Fecha_Inicio">Fecha Inicio Tratamiento</string>
-    <string name="et_Duracion">Duración del Tratamiento</string>
+    <string name="et_Duracion">Días Duración del Tratamiento</string>
     <string name="et_posologia">Posología Diaria</string>
     <string name="et_aplicaciones">Numero de Lugares a Aplicar</string>
     <string name="btn_siguiente">Siguiente</string>
