@@ -10,7 +10,7 @@
     <string name="cuadro_dialogo_mensaje">Mensaje</string>
     <string name="cuadro_dialogo_boton">Aceptar</string>
     <string name="Errores">Error</string>
-    <string name="mensaje_error_campo_vacio">El siguiente campo no puede estar vacío:</string>
+    <string name="mensaje_error_campo_vacio">Ha ocurrido el siguiente error:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

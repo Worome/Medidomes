@@ -3,12 +3,14 @@ package com.trianacodes.script.medidomes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.trianacodes.script.medidomes.entidades.General;
 import com.trianacodes.script.medidomes.ui.Mensajes;
@@ -52,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View view) {
 
                     if (validaCampos()){
+
+
+
+                    } else {
+
+                        muestraMensaje("\n\nNo puede haber ningún campo vacío. Por favor, revísalos.");
 
                     }
 
@@ -106,6 +114,21 @@ public class MainActivity extends AppCompatActivity {
 
         boolean resultado = false;
 
+        // Incorporo a un Array de tipo EditText todos los campos del activity
+        final EditText[] Campos = {nombre, uso, fecha_inicial, duracion, posologia, lugares};
+
+        /*
+        Recorro el array que he creado para comprobar que no hay ningún campo vacío.
+         */
+        for (EditText vista : Campos){
+
+            if(vista.getText().toString().isEmpty()){
+                return resultado;
+            }
+
+        }
+
+        resultado = true;
         return resultado;
 
     }
