@@ -2,31 +2,31 @@ package com.trianacodes.script.medidomes.entidades;
 
 public class General {
 
-    private String Id, Medicamento, Uso, FechaInicio;
-    private Integer Duracion, Posologia, Aplicacicones;
+    private String Id, Medicina, Uso, FechaInicio;
+    private Integer Duracion, Posologia, Aplicaciones;
 
-    public General(String id, String medicamento, String uso, String fechaInicio,
-                   Integer duracion, Integer posologia, Integer aplicacicones) {
+    public General(String id, String medicina, String uso, String fechaInicio, Integer duracion,
+                   Integer posologia, Integer aplicaciones) {
 
         Id = id;
-        Medicamento = medicamento;
+        Medicina = medicina;
         Uso = uso;
         FechaInicio = fechaInicio;
         Duracion = duracion;
         Posologia = posologia;
-        Aplicacicones = aplicacicones;
+        Aplicaciones = aplicaciones;
 
     }
 
     public General() {
 
         Id = "";
-        Medicamento = "";
+        Medicina = "";
         Uso = "";
         FechaInicio = "";
         Duracion = 0;
         Posologia = 0;
-        Aplicacicones = 0;
+        Aplicaciones = 0;
 
     }
 
@@ -38,12 +38,12 @@ public class General {
         Id = id;
     }
 
-    public String getMedicamento() {
-        return Medicamento;
+    public String getMedicina() {
+        return Medicina;
     }
 
-    public void setMedicamento(String medicamento) {
-        Medicamento = medicamento;
+    public void setMedicina(String medicina) {
+        Medicina = medicina;
     }
 
     public String getUso() {
@@ -78,11 +78,11 @@ public class General {
         Posologia = posologia;
     }
 
-    public Integer getAplicacicones() {
-        return Aplicacicones;
+    public Integer getAplicaciones() {
+        return Aplicaciones;
     }
 
-    public void setAplicacicones(Integer aplicacicones) {
-        Aplicacicones = aplicacicones;
+    public void setAplicaciones(Integer aplicaciones) {
+        Aplicaciones = aplicaciones;
     }
 }
